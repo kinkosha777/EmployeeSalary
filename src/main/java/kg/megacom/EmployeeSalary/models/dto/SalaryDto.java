@@ -10,5 +10,5 @@ public class SalaryDto {
     private double salary;
     private Date startDate;
     private Date endDate;
-    private Employee employee;
+    private EmployeeDto employee;
 }

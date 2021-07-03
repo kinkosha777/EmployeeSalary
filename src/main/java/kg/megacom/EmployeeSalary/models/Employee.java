@@ -10,7 +10,7 @@ import javax.persistence.*;
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long Emp_id;
     private String name;
     private String surname;
     private boolean isActive;

@@ -1,6 +1,8 @@
 package kg.megacom.EmployeeSalary.models;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
+
 
 import javax.persistence.*;
 import java.util.Date;
