@@ -1,5 +1,6 @@
 package kg.megacom.EmployeeSalary.controllers;
 
+
 import kg.megacom.EmployeeSalary.mappers.EmployeeSalaryUpdateMapper;
 import kg.megacom.EmployeeSalary.models.Employee;
 import kg.megacom.EmployeeSalary.models.dto.EmployeeSalaryDto;
@@ -15,10 +16,8 @@ public class EmployeeController {
     private EmployeeService employeeService;
 
 
-
-
     @PostMapping("/save")
-    public EmployeeSalaryDto save(@RequestBody EmployeeSalaryDto employeeSalaryDto){
+    public EmployeeSalaryDto save(@RequestBody EmployeeSalaryDto employeeSalaryDto) {
         // employeeSalaryDto - это объект который содержит поля с классов: Employee, Salary.
         // Далее уже этот employeeSalaryDto начинаем делить на два других объекта: employee, salary
         System.out.println(employeeSalaryDto);
@@ -27,12 +26,10 @@ public class EmployeeController {
 
 
     @PutMapping("/updateSalary")
-    public EmployeeSalaryUpdateDto  updateSalary(@RequestBody EmployeeSalaryUpdateDto employeeSalaryUpdateDto){
+    public EmployeeSalaryUpdateDto updateSalary(@RequestBody EmployeeSalaryUpdateDto employeeSalaryUpdateDto) {
         System.out.println(employeeSalaryUpdateDto);
         return employeeService.updateSalary(employeeSalaryUpdateDto);
     }
-
-
 
 
 }
